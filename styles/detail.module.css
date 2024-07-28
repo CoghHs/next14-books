@@ -5,7 +5,7 @@
   overflow-x: auto;
   list-style: none;
   gap: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -118,6 +118,6 @@
 }
 
 .author {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 400;
 }
