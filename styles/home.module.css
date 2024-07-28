@@ -34,7 +34,7 @@
   width: 0;
   height: 2px;
   background-color: #d38d2b;
-  transition: width 0.5s;
+  transition: width 0.8s;
 }
 
 .list li:hover a::after {
