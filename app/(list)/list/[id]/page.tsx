@@ -16,7 +16,7 @@ export default async function Detail({ params: { id } }: IParams) {
     <div>
       <ul className={styles.info}>
         {books.map((book, index) => (
-          <li key={index}>
+          <li key={index} style={{ animationDelay: `${0.2 * index}s` }}>
             <img src={book.book_image} alt="image" />
             <div className={styles.wrap}>
               <h1>{book.title}</h1>
