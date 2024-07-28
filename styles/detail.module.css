@@ -9,14 +9,19 @@
   position: relative;
 }
 
-/* 모든 브라우저에서 스크롤바 숨기기 */
 .info::-webkit-scrollbar {
-  display: none;
+  height: 12px;
 }
 
-.info {
-  -ms-overflow-style: none; /* IE 및 Edge */
-  scrollbar-width: none; /* Firefox */
+.info::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.info::-webkit-scrollbar-thumb {
+  background-color: #d5a96b;
+  border-radius: 6px;
+  border: 3px solid transparent;
+  background-clip: content-box;
 }
 
 .info li {
