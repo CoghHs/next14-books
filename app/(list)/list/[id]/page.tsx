@@ -5,12 +5,13 @@ import styles from "../../../../styles/detail.module.css";
 
 export async function generateMetadata({ params: { id } }: IParams) {
   return {
-    title: id,
+    title: id.replace(/-/g, " "),
   };
 }
 
 export default async function Detail({ params: { id } }: IParams) {
   const books: Book[] = await getBooksInList(id);
+  const displayId = id.replace(/-/g, " ");
   return (
     <div>
       <ul className={styles.info}>
@@ -25,7 +26,7 @@ export default async function Detail({ params: { id } }: IParams) {
           </li>
         ))}
       </ul>
-      <h1 className={styles.author}>{id} Books</h1>
+      <h1 className={styles.author}>{displayId} Books</h1>
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function AboutUsLayOut({
   return (
     <div>
       {children}
-      &copy; Next Js is great!
+      &copy; The New York Times Best Seller Explorer
     </div>
   );
 }
