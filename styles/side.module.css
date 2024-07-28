@@ -1,0 +1,16 @@
+.side {
+  width: 80px;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+
+  justify-content: center;
+}
+
+.verticalText {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 28px;
+  font-weight: 400;
+}

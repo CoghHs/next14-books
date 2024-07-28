@@ -1,3 +1,7 @@
+export interface IParams {
+  params: { id: string };
+}
+
 export interface BookList {
   list_name: string;
   display_name: string;

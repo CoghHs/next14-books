@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.list li {
+  width: 100%;
+  height: 100px;
+  list-style: none;
+  transition: transform 0.3s;
+}
+
+.list li:hover {
+  animation: listUp 0.4s forwards;
+}
+
+.list a {
+  font-size: 60px;
+  font-weight: lighter;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+@keyframes listUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+    color: #d38d2b;
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0);
+    color: #d38d2b;
+  }
+}
