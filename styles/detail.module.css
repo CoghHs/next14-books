@@ -9,8 +9,14 @@
   position: relative;
 }
 
+/* 모든 브라우저에서 스크롤바 숨기기 */
 .info::-webkit-scrollbar {
   display: none;
+}
+
+.info {
+  -ms-overflow-style: none; /* IE 및 Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .info li {
