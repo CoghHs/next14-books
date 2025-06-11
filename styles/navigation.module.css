@@ -39,3 +39,20 @@
 .inactiveLink {
   opacity: 0.6;
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    left: 0;
+    height: 90px;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .nav ul {
+    gap: 10px;
+  }
+
+  .nav ul li {
+    margin-right: 12px;
+  }
+}

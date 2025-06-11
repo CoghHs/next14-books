@@ -141,3 +141,10 @@ main {
   margin-left: 150px;
   padding-top: 60px;
 }
+
+@media screen and (max-width: 640px) {
+  main {
+    margin-left: 0px;
+    padding-top: 20px;
+  }
+}
